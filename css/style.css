@@ -1,23 +1,31 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: ;
+    padding: 0;
 }
 
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.pics-container {
+    position: relative; /* relative parent dei box */
+}
 
 .card {
     display: inline-block;
-    width: 200px;
-    height: 500px;
+    width: calc(1000px / 3 - 24px);
+    margin: 20px 10px;
 }
-
+ /* image behavior */
 .card img {
     width: 100%;
+    display: block;
 }
 img.hovered {
     display: none;
 }
-
 .card:hover img.default {
     display: none;
 }
@@ -25,3 +33,36 @@ img.hovered {
     display: block;
 }
 
+/* drawer format */
+.drawer span:last-of-type {
+    text-decoration: line-through;
+}
+.drawer span:first-of-type {
+    color: red;
+}
+
+.small-text {
+    font-size: 14px;
+}
+
+.item-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* box volanti */
+/* .pics-container:before {
+    content: '50%' '   Sostenibilità';
+    background: red;
+    position: absolute;
+    bottom: 10px;
+    z-index: 10;
+}
+.pics-container:after {
+    content: '50%';
+    background: red;
+    position: absolute;
+    bottom: 10px;
+    z-index: 10;
+} */
+/* Bella soluzione ma mi sa che è meglio gestire questi box lato html */
