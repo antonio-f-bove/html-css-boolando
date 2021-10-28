@@ -66,3 +66,24 @@ img.hovered {
     z-index: 10;
 } */
 /* Bella soluzione ma mi sa che è meglio gestire questi box lato html */
+.discount {
+    position: absolute;
+    bottom: 10px;
+    background-color: red;
+    bottom: 10px;
+}
+.eco {
+    position: absolute;
+    bottom: 10px;
+    background-color: green;
+    bottom: 10px;
+    left: 32px;
+}
+.fav { /* sarebbe da centrare verticalmente*/
+    background-color: white;
+    padding: 5px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+
+}
