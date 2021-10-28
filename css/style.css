@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: ;
+}
+
+
+.card {
+    display: inline-block;
+    width: 200px;
+    height: 500px;
+}
+
+.card img {
+    width: 100%;
+}
+img.hovered {
+    display: none;
+}
+
+.card:hover img.default {
+    display: none;
+}
+.card:hover img.hovered {
+    display: block;
+}
+
